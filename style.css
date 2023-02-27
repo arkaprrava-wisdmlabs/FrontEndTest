@@ -39,7 +39,7 @@ nav .links a:hover {
 }
 nav .links {
     display: inline-flex;
-    margin-right:18rem;
+    margin-right:16rem;
 }
 nav .signup {
     display:inline-flex;
@@ -48,7 +48,7 @@ nav .signup p {
     color:red;
     width:max-content;
     padding:1rem;
-    margin-right: 5rem;
+    margin-right: 3rem;
 }
 nav .signup button {
     color: red;
@@ -382,11 +382,11 @@ footer div p {
         box-shadow: 5px 7px 25px rgb(170, 170, 170);
     }
     footer {
-        height:15%;
+        height:max-content;
     }
     footer div{
         padding-top:2rem;
-        padding-bottom:0%;
+        padding-bottom:2rem;
         width:fit-content;
         margin: 0 auto;
     }
