@@ -288,15 +288,18 @@ footer div p {
     header {
         display:block;
         margin-left: 1.5rem;
-        height: 35%;
+        margin-bottom: 10%;
+        height: fit-content;
     }
     header div h1 {
         font-size:18px;
     }
     header div p {
+        margin-top: 3%;
         font-size: 10px;
     }
     header div button {
+        margin-top: 3%;
         font-size: 10px;
     }
     header div button:hover {
@@ -304,23 +307,23 @@ footer div p {
 
     }
     header figure {
-        margin-top: 3%;
+        margin-top: 1%;
         margin-left: 1rem;
         width:60%;
         height:50%;
     }
     header div .search {
-        margin-top: 2%;
+        margin-top: 5%;
     }
     header div .search input {
-        padding:0.5% 1%;
+        padding:1.2% 3%;
         width:fit-content;
         height:fit-content;
         font-size: 5px;
         margin-top: 0.5%;
     }
     header div .search button {
-        padding:0.5% 1%;
+        padding:0.8% 2%;
         border: 0.5px solid aquamarine;
         border-radius: 20px;
         font-size: 6px;
@@ -329,6 +332,7 @@ footer div p {
         box-shadow: 1px 2px 5px rgb(170, 170, 170);
     }
     .about {
+        height: fit-content;
         flex-wrap: wrap-reverse;
     }
     .about div {
@@ -370,8 +374,8 @@ footer div p {
         margin: 2% auto;
     }
     .product figure {
-        margin-top: 5%;
-        margin-bottom: 10%;
+        margin-top: 7%;
+        margin-bottom: 7%;
     }
     .card {
         height:fit-content;
