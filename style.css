@@ -1,0 +1,407 @@
+* {
+    width:100%;
+    padding: 0px;
+    margin:0px;
+}
+html, body {
+    width:100%;
+    height:100%;
+    padding:0px;
+    margin:0px;
+    overflow-x:hidden;
+}
+nav {
+    width:100%;
+    height:3rem;
+    display:inline-flex;
+    background-color: #f8f8f8;
+    padding: 1rem 3rem;
+    overflow-x: hidden;
+}
+nav .logo {
+    color: rgb(25, 9, 112);
+    padding: 1rem;
+    width:max-content;
+    margin-left:5rem;
+    margin-right: 1rem;
+    font-size: 20px;
+}
+nav .links a {
+    position:relative;
+    top:1.3rem;
+    left:1rem;
+    padding-left:8rem;
+    color:black;
+    text-decoration: none;
+}
+nav .links a:hover {
+    color:aqua;
+}
+nav .links {
+    display: inline-flex;
+    margin-right:18rem;
+}
+nav .signup {
+    display:inline-flex;
+}
+nav .signup p {
+    color:red;
+    width:max-content;
+    padding:1rem;
+    margin-right: 5rem;
+}
+nav .signup button {
+    color: red;
+    background-color: #f8f8f8;
+    border: 1px solid red;
+    padding: 0rem 1.5rem;
+    width: max-content;
+    border-radius: 36px;
+}
+nav .signup p:hover {
+    color:black;
+}
+nav .signup button:hover {
+    box-shadow: 2px 5px 15px rgb(170, 170, 170);
+}
+nav .drop {
+    float:right;
+    display:none;
+    margin-top: 1rem;
+    margin-left: 20%;
+}
+nav .drop div {
+    background-color:black;
+    border:1px solid black;
+    border-radius: 24px;
+    width:20%;
+    height:4%;
+    margin:2%;
+}
+header{
+    width:100%;
+    height:40%;
+    padding:3% 10%;
+    display:inline-flex;
+}
+header div {
+    width:max-content;
+    height:max-content;
+    display:block;
+    padding:1rem;
+    opacity: 1;
+}
+header div h1 {
+    font-size: 48px;
+    font-style: italic;
+}
+header div p {
+    margin-top: 2%;
+    font-size: 24px;
+}
+header div button {
+    margin-top:2%;
+    width:fit-content;
+    padding: 2% 4%;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 36px;
+    font-size:18px;
+}
+header div .search {
+    display:inline-flex;
+    margin-top:5%;
+    width:fit-content;
+    padding: 2% 1%;
+}
+header div .search input {
+    background-color: #ebebeb;
+    padding:4% 3%;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    width:fit-content;
+    margin-right:1%;
+}
+header div .search button {
+    background-color: aquamarine;
+    color:white;
+    width:fit-content;
+    height:fit-content;
+    padding: 2% 4%;
+    margin-top: 0%;
+    margin-left: 1%;
+    border: 2px solid aquamarine;
+    border-radius: 20px;
+}
+header div .search button:hover {   
+    box-shadow: 5px 10px 25px rgb(170, 170, 170);
+}
+header div button:hover{
+    box-shadow: 5px 10px 25px rgb(170, 170, 170);
+}
+header figure {
+    margin-left: 20%;
+    width:30%;
+}
+.about {
+    width:100%;
+    height:40%;
+    padding:3% 10%;
+    display:flex;
+    flex-direction: row;
+}
+.about figure {
+    margin-right: 20%;
+    width:50%;
+    margin-left:1rem;
+}
+.about div {
+    display:block;
+    margin-left: 1rem;
+}
+.about div p {
+    margin-top: 2%;
+    height:fit-content;
+    font-size: 24px;
+}
+.about div h1 {
+    height:fit-content;
+    font-size: 48px;
+    font-style: italic;
+}
+.product {
+    width:80%;
+    height:max-content;
+    padding:3% 10%;
+}
+.product figure {
+    margin:5% 20% 0% 20%;
+    width:60%;
+}
+.product div {
+    justify-items: center;
+}
+.product div h1 {
+    height:fit-content;
+    font-size: 48px;
+    margin: 0px;
+    padding:0px;
+    font-style: italic;
+    text-align: center;
+}
+.product div p {
+    margin-top: 2%;
+    height:fit-content;
+    font-size: 24px;
+    text-align: center;
+}
+.card {
+    position:relative;
+    top:-3%;
+    background-color:white;
+    width:60%;
+    height:15%;
+    margin:3% 20%;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 7px 13px 35px rgb(170, 170, 170);
+}
+.card .content {
+    display:inline-flex;
+    padding: 2rem 0rem;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin:0%;
+    margin-left:1rem;
+    width:fit-content;
+}
+.card .content figure {
+    width:30%;
+    margin-left:5rem;
+    margin-right: 1rem;
+}
+.card .signup {
+    display: inline-flex;
+    padding:2%;
+}
+.card .signup h1 {
+    float: left;
+    margin-top:2%;
+    margin-left: 2%;
+    font-style: italic;
+}
+.card .signup button {
+    float:right;
+    margin-top:2%;
+    width:fit-content;
+    padding: 1.5% 3%;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 36px;
+    margin-top:2%;
+    margin-right: 4%;
+    font-size: 18px;
+}
+.card .signup button:hover {
+    box-shadow: 5px 10px 25px rgb(170, 170, 170);
+}
+footer {
+    width:100%;
+    height:30%;
+    display:inline-flex;
+    background-color:#ebebeb;
+}
+footer div {
+    padding: 6rem 1rem 6rem 1rem;
+}
+footer div h1 {
+    font-style: italic;
+    font-size: 48px;
+    text-align: center;
+}
+footer div p {
+    font-style: italic;
+    font-size: 24px;
+    margin-top: 2%;
+    text-align: center;
+}
+@media only screen and (max-device-width:600px) {
+    nav .logo {
+        color: rgb(25, 9, 112);
+        padding: 1rem;
+        width:max-content;
+        margin-right:15%;
+        margin-left: 0rem;
+    }
+    nav .drop {
+        display:block;
+    }
+    nav .links {
+        display: none;
+    }
+    nav .signup {
+        display: none;
+    }
+    header {
+        display:block;
+        margin-left: 1.5rem;
+    }
+    header div h1 {
+        font-size:18px;
+    }
+    header div p {
+        font-size: 10px;
+    }
+    header div button {
+        font-size: 10px;
+    }
+    header div button:hover {
+        box-shadow: 1px 5px 8px rgb(170, 170, 170);
+
+    }
+    header figure {
+        margin-top: 3%;
+        margin-left: 1rem;
+        width:60%;
+        height:50%;
+    }
+    header div .search {
+        margin-top: 2%;
+    }
+    header div .search input {
+        padding:0.5% 1%;
+        width:fit-content;
+        height:fit-content;
+        font-size: 5px;
+        margin-top: 0.5%;
+    }
+    header div .search button {
+        padding:0.5% 1%;
+        border: 0.5px solid aquamarine;
+        border-radius: 20px;
+        font-size: 6px;
+    }
+    header div .search button:hover {   
+        box-shadow: 1px 2px 5px rgb(170, 170, 170);
+    }
+    .about {
+        flex-wrap: wrap-reverse;
+    }
+    .about div {
+        width:70%;
+        height: fit-content;
+        padding:0px;
+    }
+    .about div h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+    .about div p {
+        font-size: 10px;
+        text-align: center;
+    }
+    .about figure {
+        margin-top: 3%;
+        margin-left: 2rem;
+        width:60%;
+        height:65%;
+    }
+    .product div {
+        justify-items: center;
+    }
+    .product div h1 {
+        font-size: 18px;
+    }
+    .product div p {
+        font-size: 10px;
+    }
+    .card {
+        height:7%;
+        box-shadow: 5px 7px 25px rgb(170, 170, 170);
+    }
+    footer {
+        height:15%;
+        margin-left:4%;
+    }
+    footer div{
+        padding-top:2rem;
+        padding-bottom:0%;
+        width:fit-content;
+    }
+    footer div h1 {
+        font-size: 12px;
+        text-align: center;
+    }
+    footer div p {
+        font-size: 10px;
+    }
+    .card .content {
+        padding: 8% 0rem;
+        margin-left: 0.1rem;
+    }
+    .card .content div h1 {
+        font-size: 8px;
+    }
+    .card .content div p {
+        font-size: 3px;
+    }
+    .card .content figure {
+        width:35%;
+        margin-left:0.5rem;
+        margin-right: 0.1rem;
+    }
+    .card .signup h1 {
+        margin-top:6%;
+        margin-left: 4%;
+        font-size: 8px;
+    }
+    .card .signup button {
+        margin-top:5%;
+        margin-right: 6%;
+        font-size: 5px;
+        box-shadow: 1px 5px 8px rgb(170, 170, 170);
+    }
+}
