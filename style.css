@@ -197,6 +197,64 @@ header figure {
     font-size: 24px;
     text-align: center;
 }
+.container {
+    display: block;
+    height: max-content;
+}
+.container .heading {
+    padding:1% 3%;
+    margin-left:-1%;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+}
+.container .heading h1 {
+    padding: 0% 2%;
+    font-size: 24px;
+    width: 20%;
+}
+
+.container .content {
+    width:95%;
+    padding:1% 1%;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    margin:1%;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 7px 13px 35px rgb(170, 170, 170);
+}
+
+.container .content h1 {
+    font-size: 24px;
+    width: 25.5%;
+}
+.container .content p {
+    font-size: 12px;
+    width: 25.5%;
+}
+.container .content button {
+    background-color: aquamarine;
+    color:white;
+    width:fit-content;
+    height:fit-content;
+    padding: 1% 2%;
+    margin-top: 0%;
+    margin-left:7.7%;
+    border: 2px solid aquamarine;
+    border-radius: 20px;
+    width: 10%;
+}
+.container .content button:hover {    
+    box-shadow: 5px 10px 25px rgb(170, 170, 170);
+}
+.container_cost h1,
+.container_time h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 1% 0%;
+}
 .card {
     position:relative;
     top:-3%;

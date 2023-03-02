@@ -2,6 +2,8 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+        <script src="script.js"></script>
     </head id="home">
     <body>
         <nav>
@@ -29,15 +31,25 @@
                 <h1>Delivery Reference</h1>
                 <p>It helps to check, compare and visualize between<br> different shipping services <br> choose between them</p>
                 <div class="search">
-                    <input type="text" placeholder="From Address">
-                    <input type="text" placeholder="To address">
-                    <input type="number" placeholder="Weight in lbs">
-                    <button type="submit">Submit</button>
+                    <input type="text" placeholder="From PinCode" id="startcode">
+                    <input type="text" placeholder="To Pincode" id="endcode">
+                    <input type="number" placeholder="Weight in lbs" id="weight">
+                    <button type="submit" onclick="bill()">Submit</button>
                 </div>
             </div>
             <figure>
                 <img src="images/header.png" alt="Company logo">
             </figure>
         </header>
+        <main>
+            <div class="container" id="container">
+            </div>
+            <figure class="container_cost" id="container_cost">
+                
+            </figure>
+            <figure class="container_time" id="container_time">
+
+            </figure>
+        </main>
     </body>
 </html>
