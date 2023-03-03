@@ -76022,7 +76022,7 @@ function bill_cost(){
     chart.data(data);
 
     // set the chart title
-    chart.title("The deadliest earthquakes in the XXth century");
+    chart.title("Cost");
 
     // draw
     chart.container("container_cost");
@@ -76060,7 +76060,7 @@ function bill_time(){
     chart.data(data);
 
     // set the chart title
-    chart.title("z");
+    chart.title("time");
 
     // draw
     chart.container("container_time");
@@ -76077,16 +76077,16 @@ const billinvoice = () => {
   <div class="heading">
     <h1>Company name</h1>
     <h1>Shipping cost</h1>
-    <h1>Delivery time (hrs)</h1>
-    <h1>Book Now</h1>
+    <h1>Delivery time</h1>
+    <h1>Booking slot</h1>
   </div>
   `;
   for(const property in bills) {
     output += `
       <div class="content">
         <h1>${property}</h1>
-        <p>${bills[property]['shipping_cost']['value']}</p>
-        <p>${bills[property]['transit_time']['value']}</p>
+        <p>Rs. ${bills[property]['shipping_cost']['value']}</p>
+        <p>${bills[property]['transit_time']['value']} hrs</p>
         <button><nobr>Book now</nobr></button>
       </div>
     `;

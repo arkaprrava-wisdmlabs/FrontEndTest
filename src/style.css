@@ -141,7 +141,7 @@ header div button:hover{
     box-shadow: 5px 10px 25px rgb(170, 170, 170);
 }
 header figure {
-    margin-left: 20%;
+    margin-left: 15%;
     width:30%;
 }
 .about {
@@ -203,10 +203,11 @@ header figure {
 }
 .container .heading {
     padding:1% 3%;
-    margin-left:-1%;
+    margin-left:7%;
     display: inline-flex;
     text-align: center;
     align-items: center;
+    width:85%;
 }
 .container .heading h1 {
     padding: 0% 2%;
@@ -215,15 +216,15 @@ header figure {
 }
 
 .container .content {
-    width:95%;
+    width:80%;
     padding:1% 1%;
     display: inline-flex;
     text-align: center;
     align-items: center;
-    margin:1% 1.5%;
+    margin:1% 10%;
     border: 1px solid white;
     border-radius: 20px;
-    box-shadow: 7px 13px 35px rgb(170, 170, 170);
+    box-shadow: 7px 10px 20px rgb(170, 170, 170);
 }
 
 .container .content h1 {
@@ -249,11 +250,16 @@ header figure {
 .container .content button:hover {    
     box-shadow: 5px 10px 25px rgb(170, 170, 170);
 }
+.container_cost,
+.container_time {
+    margin-left: 10%;
+    width:90%;
+}
 .container_cost h1,
 .container_time h1 {
     font-size: 24px;
     text-align: center;
-    margin: 1% 0%;
+    margin: 2% 0%;
 }
 .card {
     position:relative;
@@ -345,7 +351,7 @@ footer div p {
     }
     header {
         display:block;
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         margin-bottom: 10%;
         height: fit-content;
     }
@@ -374,8 +380,8 @@ footer div p {
         margin-top: 5%;
     }
     header div .search input {
-        padding:1.2% 3%;
-        width:fit-content;
+        padding:1.2% 2%;
+        width:25%;
         height:fit-content;
         font-size: 5px;
         margin-top: 0.5%;
@@ -484,5 +490,51 @@ footer div p {
         padding:0% 7%;
         border: 0.00005px solid red;
         box-shadow: 1px 5px 8px rgb(170, 170, 170);
+    }
+    .container {
+        margin-bottom:10%;
+    }
+    .container .heading {
+        display: none;
+        padding: 3%;
+    }
+    .container .content {
+        display: block;
+        width: 50%;
+        margin-top:8%;
+        margin-left: 20%;
+        padding:2%;
+    }
+    .container .content h1 {       
+        font-size: 12px;
+    }
+    .container .content p {
+        font-size: 8px;
+    }
+    .container .content h1,
+    .container .content p {
+        width: 100%;
+        text-align: center;
+        margin: 2%;
+    }
+    .container .content button {
+        background-color: aquamarine;
+        color:white;
+        width:max-content;
+        height:fit-content;
+        padding: 2% 4%;
+        margin-top: 0%;
+        margin-left:0%;
+        border: 2px solid aquamarine;
+        border-radius: 20px;
+        font-size:10px;
+    }
+    .container .content button:hover {    
+        box-shadow: 1px 1px 1px rgb(170, 170, 170);
+    }
+    .container_cost,
+    .container_time {
+        margin-left: 0%;
+        width:100%;
     }
 }
