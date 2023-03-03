@@ -2,20 +2,20 @@ const cost_json = {
   1: {
     'Company': "Fedex",
     'transit_speed': {
-      'value': 80.00,
+      'value': 8.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 2.00,
+        'value': 0.20,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 5.00,
+        'value': 0.50,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 50.00,
+        'value': 10.00,
         'currency': 'INR'
       }
     }
@@ -23,20 +23,20 @@ const cost_json = {
   2: {
     'Company': "GenieMode",
     'transit_speed': {
-      'value': 70.00,
+      'value': 7.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 3.00,
+        'value': 0.30,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 8.00,
+        'value': 0.80,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 30.00,
+        'value': 13.00,
         'currency': 'INR'
       }
     }
@@ -44,20 +44,20 @@ const cost_json = {
   3: {
     'Company': "GenieMode",
     'transit_speed': {
-      'value': 90.00,
+      'value': 9.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 3.00,
+        'value': 0.30,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 8.00,
+        'value': 0.80,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 30.00,
+        'value': 13.00,
         'currency': 'INR'
       }
     },
@@ -65,20 +65,20 @@ const cost_json = {
   4: {
     'Company': "Agkem Impex",
     'transit_speed': {
-      'value': 80.00,
+      'value': 8.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 5.00,
+        'value': 0.50,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 10.00,
+        'value': 0.10,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 50.00,
+        'value': 15.00,
         'currency': 'INR'
       }
     }
@@ -86,20 +86,20 @@ const cost_json = {
   5: {
     'Company': "Pfc",
     'transit_speed': {
-      'value': 110.00,
+      'value': 11.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 3.00,
+        'value': 0.30,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 4.00,
+        'value': 0.40,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 80.00,
+        'value': 18.00,
         'currency': 'INR'
       }
     }
@@ -107,37 +107,16 @@ const cost_json = {
   6: {
     'Company': "Victoria International",
     'transit_speed': {
-      'value': 60.00,
+      'value': 6.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 4.00,
+        'value': 0.40,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 9.00,
-        'currency': 'INR'
-      },
-      'Service_charges': {
-        'value': 100.00,
-        'currency': 'INR'
-      }
-    }
-  },
-  7: {
-    'Company': "Shabana",
-    'transit_speed': {
-      'value': 120.00,
-      'unit': 'km/hr'
-    },
-    'rates': {
-      'distance_rate': {
-        'value': 4.00,
-        'currency': 'INR'
-      },
-      'weight_rate': {
-        'value': 5.00,
+        'value': 0.90,
         'currency': 'INR'
       },
       'Service_charges': {
@@ -146,23 +125,44 @@ const cost_json = {
       }
     }
   },
-  8: {
-    'Company': "Kishore",
+  7: {
+    'Company': "Shabana",
     'transit_speed': {
-      'value': 120.00,
+      'value': 12.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 3.00,
+        'value': 0.40,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 8.00,
+        'value': 0.50,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 30.00,
+        'value': 12.00,
+        'currency': 'INR'
+      }
+    }
+  },
+  8: {
+    'Company': "Kishore",
+    'transit_speed': {
+      'value': 12.00,
+      'unit': 'km/hr'
+    },
+    'rates': {
+      'distance_rate': {
+        'value': 0.30,
+        'currency': 'INR'
+      },
+      'weight_rate': {
+        'value': 0.80,
+        'currency': 'INR'
+      },
+      'Service_charges': {
+        'value': 13.00,
         'currency': 'INR'
       }
     }
@@ -170,20 +170,20 @@ const cost_json = {
   9: {
     'Company': "Itsy Bitsy",
     'transit_speed': {
-      'value': 80.00,
+      'value': 8.00,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 5.00,
+        'value': 0.50,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 8.00,
+        'value': 0.80,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 30.00,
+        'value': 13.00,
         'currency': 'INR'
       }
     }
@@ -191,20 +191,20 @@ const cost_json = {
   10: {
     'Company': "Eastman",
     'transit_speed': {
-      'value': 75.00,
+      'value': 7.50,
       'unit': 'km/hr'
     },
     'rates': {
       'distance_rate': {
-        'value': 3.00,
+        'value': 0.30,
         'currency': 'INR'
       },
       'weight_rate': {
-        'value': 5.00,
+        'value': 0.50,
         'currency': 'INR'
       },
       'Service_charges': {
-        'value': 30.00,
+        'value': 13.00,
         'currency': 'INR'
       }
     }
@@ -75991,80 +75991,45 @@ const calculatebills = (startcode,endcode,weight) => {
     return output_json;
   }
 }
-function bill_cost(){
-  const startcode = document.getElementById("startcode").value;
-  const endcode = document.getElementById("endcode").value;
-  const weight = document.getElementById("weight").value;
-  const bills = calculatebills(startcode,endcode,weight);
-  var i = 0;
-  var arr = new Array(10);
-  for(const property in bills){
-    arr[i] = new Array(2);
-    arr[i][0] = property;
-    arr[i][1] = bills[property]['shipping_cost']['value'];
-    i+=1;
-  }
-  document.getElementById("container_cost").innerHTML=`
-    <h1>Cost chart</h1>
-  `;
-  anychart.onDocumentReady(function() {
- 
-    // set the data
-    var data = {
-        header: ["Name", "cost"],
-        rows: arr
-    };
-
-    // create the chart
-    var chart = anychart.bar();
-
-    // add the data
-    chart.data(data);
-
-    // set the chart title
-    chart.title("Cost");
-
-    // draw
-    chart.container("container_cost");
-    chart.draw();
-  });
-}
 function bill_time(){
   const startcode = document.getElementById("startcode").value;
   const endcode = document.getElementById("endcode").value;
   const weight = document.getElementById("weight").value;
   const bills = calculatebills(startcode,endcode,weight);
   var i = 0;
-  var arr = new Array(10);
+  var xValues = new Array(10);
+  var y1Values = new Array(10);
+  var y2Values = new Array(10);
   for(const property in bills){
-    arr[i] = new Array(2);
-    arr[i][0] = property;
-    arr[i][1] = bills[property]['transit_time']['value'];
+    xValues[i] = property;
+    y1Values[i] = bills[property]['transit_time']['value'];
+    y2Values[i] = bills[property]['shipping_cost']['value'];
     i+=1;
   }
-  document.getElementById("container_time").innerHTML=`
-    <h1>Time chart</h1>
-  `;
-  anychart.onDocumentReady(function() {
- 
-    // set the data
-    var data = {
-        header: ["Name", "time"],
-        rows: arr
-    };
-
-    // create the chart
-    var chart = anychart.bar();
-
-    // add the data
-    chart.data(data);
-
-    // set the chart title
-    chart.title("time");
-
-    // draw
-    chart.container("container_time");
-    chart.draw();
+  var y1barColor = "red";
+  var y2barColor = "green";
+  new Chart("container_time", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        label:  'Cost',
+        backgroundColor: y1barColor,
+        data: y1Values
+      },
+      {
+          label:  'Time',
+          backgroundColor: y2barColor,
+          data: y2Values
+        }]
+    },
+    options: {
+      legend: {display: false},
+      title: {
+        display: true,
+        text: "Comparison Chart"
+      }
+    }
   });
 }
 const billinvoice = () => {
@@ -76094,7 +76059,6 @@ const billinvoice = () => {
   container.innerHTML=output;
 }
 function bill() {
-  bill_cost();
   bill_time();
   billinvoice();
 }

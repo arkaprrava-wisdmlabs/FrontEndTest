@@ -250,16 +250,9 @@ header figure {
 .container .content button:hover {    
     box-shadow: 5px 10px 25px rgb(170, 170, 170);
 }
-.container_cost,
-.container_time {
-    margin-left: 10%;
-    width:90%;
-}
-.container_cost h1,
-.container_time h1 {
-    font-size: 24px;
-    text-align: center;
-    margin: 2% 0%;
+#container_time {
+    max-width: 80%;
+    margin: auto;
 }
 .card {
     position:relative;
@@ -335,7 +328,7 @@ footer div p {
 @media only screen and (max-device-width:600px) {
     nav .logo {
         color: rgb(25, 9, 112);
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         width:max-content;
         margin-right:15%;
         margin-left: 0rem;
