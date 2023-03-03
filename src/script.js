@@ -209,7 +209,7 @@ const cost_json = {
       }
     }
   },
-}
+};
 
 const india = {
   "110001": {
@@ -75946,7 +75946,7 @@ const calculate_distance = (startcode, endcode) => {
   else {
     return distance;
   }
-}
+};
 
 const calculate_Rate_Transit = (company_id,distance, weight) => {
   const distance_charge = distance * cost_json[company_id]['rates']['distance_rate']['value'];
@@ -75976,7 +75976,7 @@ const calculate_Rate_Transit = (company_id,distance, weight) => {
     }
   }
   return bill;
-}
+};
 const calculatebills = (startcode,endcode,weight) => {
   var output_json = {};
   var distance;
@@ -75990,7 +75990,7 @@ const calculatebills = (startcode,endcode,weight) => {
     }
     return output_json;
   }
-}
+};
 function bill_time(){
   const startcode = document.getElementById("startcode").value;
   const endcode = document.getElementById("endcode").value;
@@ -76006,8 +76006,10 @@ function bill_time(){
     y2Values[i] = bills[property]['shipping_cost']['value'];
     i+=1;
   }
-  var y1barColor = "red";
-  var y2barColor = "green";
+  var y1barColor = "rgba(255,99,122,0.2)";
+  var y2barColor = "rgba(54,162,235,0.2)";
+  var y1borderColor = "rgba(255,99,122,1.0)";
+  var y2borderColor = "rgba(54,162,235,1.0)";
   new Chart("container_time", {
     type: "bar",
     data: {
@@ -76015,23 +76017,27 @@ function bill_time(){
       datasets: [{
         label:  'Cost',
         backgroundColor: y1barColor,
+        borderColor: y1borderColor,
+        borderWidth:1,
         data: y1Values
       },
       {
           label:  'Time',
           backgroundColor: y2barColor,
+          borderColor: y2borderColor,
+          borderWidth:1,
           data: y2Values
         }]
     },
     options: {
-      legend: {display: false},
+      legend: {display: true},
       title: {
         display: true,
         text: "Comparison Chart"
       }
     }
   });
-}
+};
 const billinvoice = () => {
   const container = document.getElementById("container");
   const startcode = document.getElementById("startcode").value;
@@ -76057,8 +76063,8 @@ const billinvoice = () => {
     `;
   }
   container.innerHTML=output;
-}
+};
 function bill() {
   bill_time();
   billinvoice();
-}
+};
