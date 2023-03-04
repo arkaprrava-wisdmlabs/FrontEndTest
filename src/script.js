@@ -75938,16 +75938,6 @@ const calculategeoDistance = (start, end) => {
   }
 };
 
-const calculate_distance = (startcode, endcode) => {
-  const distance = calculategeoDistance(india[startcode],india[endcode]);
-  if(distance === -1) {
-    return 'Invalid postal address please check.';
-  }
-  else {
-    return distance;
-  }
-};
-
 const calculate_Rate_Transit = (company_id,distance, weight) => {
   const distance_charge = distance * cost_json[company_id]['rates']['distance_rate']['value'];
   const weight_charges = weight * cost_json[company_id]['rates']['weight_rate']['value'];
@@ -75978,18 +75968,60 @@ const calculate_Rate_Transit = (company_id,distance, weight) => {
   return bill;
 };
 const calculatebills = (startcode,endcode,weight) => {
-  var output_json = {};
+  var output_json = {}
   var distance;
   if(calculategeoDistance(india[startcode], india[endcode]) === -1) {
+    document.getElementById("from").style.display="block";
+    document.getElementById("to").style.display="block";
+    document.getElementById("weight_e").style.display="none";
+    document.getElementById("container").style.color="white";
+    document.getElementById("container_time").style.display="none";
+    document.getElementById("headfig").style.marginLeft="4%";
+    const myFunction = (x) => {
+      if(x.matches) {
+        document.getElementById("headfig").style.marginLeft="1rem";
+      }
+    }
+    return -1;
+  }
+  else if (weight < 0) {
+    document.getElementById("from").style.display="none";
+    document.getElementById("to").style.display="none";
+    document.getElementById("weight_e").style.display="block";
+    document.getElementById("container").style.color="white";
+    document.getElementById("container_time").style.display="none";
+    document.getElementById("headfig").style.marginLeft="9%";
+    const myFunction = (x) => {
+      if(x.matches) {
+        document.getElementById("headfig").style.marginLeft="1rem";
+      }
+    }
+    var x = window.matchMedia("(max-width: 600px)")
+    myFunction(x) // Call listener function at run time
+    x.addEventListener("change",myFunction) // Attach listener function on state changes
     return -1;
   }
   else {
-    distance = calculate_distance(startcode,endcode);
+    document.getElementById("from").style.display="none";
+    document.getElementById("to").style.display="none";
+    document.getElementById("weight_e").style.display="none";
+    document.getElementById("container").style.color="black";
+    document.getElementById("container_time").style.display="block";
+    document.getElementById("headfig").style.marginLeft="15%";
+    const myFunction = (x) => {
+      if(x.matches) {
+        document.getElementById("headfig").style.marginLeft="1rem";
+      }
+    }
+    var x = window.matchMedia("(max-width: 600px)")
+    myFunction(x) // Call listener function at run time
+    x.addEventListener("change",myFunction) // Attach listener function on state changes
+    distance = calculategeoDistance(india[startcode], india[endcode]);
     for(const property in cost_json) {
       output_json[cost_json[property]['Company']] = calculate_Rate_Transit(property,distance,weight);
     }
-    return output_json;
   }
+  return output_json;
 };
 function bill_time(){
   const startcode = document.getElementById("startcode").value;

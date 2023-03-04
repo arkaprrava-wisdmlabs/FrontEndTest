@@ -31,13 +31,18 @@
                 <h1>Delivery Reference</h1>
                 <p>It helps to check, compare and visualize between<br> different shipping services <br> choose between them</p>
                 <div class="search">
-                    <input type="text" placeholder="From PinCode" id="startcode">
-                    <input type="text" placeholder="To Pincode" id="endcode">
-                    <input type="number" placeholder="Weight in lbs" id="weight">
+                    <input type="text" placeholder="From PinCode" id="startcode" required>
+                    <input type="text" placeholder="To Pincode" id="endcode" required>
+                    <input type="number" placeholder="Weight in lbs" id="weight" required>
                     <button type="submit" onclick="bill()">Submit</button>
                 </div>
+                <div class="errors">
+                    <div id="from">Error: invalid address</div>
+                    <div id="to">Error: invalid address</div>
+                    <div id="weight_e">Error: invalid weight</div>
+                </div>
             </div>
-            <figure>
+            <figure id="headfig">
                 <img src="images/header.png" alt="Company logo">
             </figure>
         </header>
