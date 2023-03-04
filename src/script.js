@@ -76015,14 +76015,14 @@ function bill_time(){
     data: {
       labels: xValues,
       datasets: [{
-        label:  'Cost',
+        label:  'Time',
         backgroundColor: y1barColor,
         borderColor: y1borderColor,
         borderWidth:1,
         data: y1Values
       },
       {
-          label:  'Time',
+          label:  'Cost',
           backgroundColor: y2barColor,
           borderColor: y2borderColor,
           borderWidth:1,
@@ -76030,6 +76030,7 @@ function bill_time(){
         }]
     },
     options: {
+      maintainAspectRatio: false,
       legend: {display: true},
       title: {
         display: true,
@@ -76057,7 +76058,7 @@ const billinvoice = () => {
       <div class="content">
         <h1>${property}</h1>
         <p>Rs. ${bills[property]['shipping_cost']['value']}</p>
-        <p>${bills[property]['transit_time']['value']} hrs</p>
+        <p>${bills[property]['transit_time']['value']} hrs (${(bills[property]['transit_time']['value'] / 24).toFixed(0)} days ${(bills[property]['transit_time']['value'] % 24).toFixed(0)} hrs)</p>
         <button><nobr>Book now</nobr></button>
       </div>
     `;
