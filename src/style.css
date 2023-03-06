@@ -120,7 +120,7 @@ header div .search input {
     padding:2% 3%;
     border: 1px solid #ebebeb;
     border-radius: 8px;
-    width:fit-content;
+    width:max-content;
     margin-right:1%;
     margin-bottom: 0%;
 }
@@ -155,10 +155,7 @@ header div .errors #weight_e {
 }
 header div .errors #from {
     display: none;
-} 
-header div .errors #to {
-    display: none;
-} 
+}
 header div button:hover{
     box-shadow: 5px 10px 25px rgb(170, 170, 170);
 }
@@ -488,8 +485,10 @@ footer div .icons figure {
         margin-bottom: 7%;
     }
     .card {
+        border-radius: 10px;
         height:fit-content;
         box-shadow: 5px 7px 25px rgb(170, 170, 170);
+        margin-left: 18%;
     }
     .card .content {
         padding: 5% 0rem;
@@ -564,24 +563,22 @@ footer div .icons figure {
         box-shadow: 1px 1px 1px rgb(170, 170, 170);
     }
     footer {
+        display: block;
         height:max-content;
         margin-bottom: 0%;
     }
-    footer div{
-        display: none;
-    }
-    footer .mobile {
+    footer div {
         display: block;
-        width: fit-content;
+        width: 50%;
         height: fit-content;
-        padding:0%;
-        margin:7% 17%;
+        padding: 0%;
+        margin: 7% 9%;
     }
-    footer .mobile h1 {
+    footer div h1 {
         font-size: 24px;
         text-align: center;
     }
     footer div .icons{
-        margin-left: 0%;
+        margin-left: 19%;
     }
 }

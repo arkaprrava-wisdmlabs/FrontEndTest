@@ -75972,7 +75972,6 @@ const calculatebills = (startcode,endcode,weight) => {
   var distance;
   if(calculategeoDistance(india[startcode], india[endcode]) === -1) {
     document.getElementById("from").style.display="block";
-    document.getElementById("to").style.display="block";
     document.getElementById("weight_e").style.display="none";
     document.getElementById("container").style.color="white";
     document.getElementById("container_time").style.display="none";
@@ -75981,12 +75980,14 @@ const calculatebills = (startcode,endcode,weight) => {
       if(x.matches) {
         document.getElementById("headfig").style.marginLeft="1rem";
       }
+      else {
+        document.getElementById("headfig").style.marginLeft="4%";
+      }
     }
     return -1;
   }
   else if (weight < 0) {
     document.getElementById("from").style.display="none";
-    document.getElementById("to").style.display="none";
     document.getElementById("weight_e").style.display="block";
     document.getElementById("container").style.color="white";
     document.getElementById("container_time").style.display="none";
@@ -75994,6 +75995,9 @@ const calculatebills = (startcode,endcode,weight) => {
     const myFunction = (x) => {
       if(x.matches) {
         document.getElementById("headfig").style.marginLeft="1rem";
+      }
+      else {
+        document.getElementById("headfig").style.marginLeft="9%";
       }
     }
     var x = window.matchMedia("(max-width: 600px)")
@@ -76003,7 +76007,6 @@ const calculatebills = (startcode,endcode,weight) => {
   }
   else {
     document.getElementById("from").style.display="none";
-    document.getElementById("to").style.display="none";
     document.getElementById("weight_e").style.display="none";
     document.getElementById("container").style.color="black";
     document.getElementById("container_time").style.display="block";
@@ -76011,6 +76014,9 @@ const calculatebills = (startcode,endcode,weight) => {
     const myFunction = (x) => {
       if(x.matches) {
         document.getElementById("headfig").style.marginLeft="1rem";
+      }
+      else {
+        document.getElementById("headfig").style.marginLeft="15%";
       }
     }
     var x = window.matchMedia("(max-width: 600px)")
