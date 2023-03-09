@@ -23,7 +23,7 @@ const cost_json = {
   2: {
     'Company': "GenieMode",
     'transit_speed': {
-      'value': 7.00,
+      'value': 10.00,
       'unit': 'km/hr'
     },
     'rates': {
@@ -65,7 +65,7 @@ const cost_json = {
   4: {
     'Company': "Agkem Impex",
     'transit_speed': {
-      'value': 8.00,
+      'value': 18.00,
       'unit': 'km/hr'
     },
     'rates': {
@@ -86,7 +86,7 @@ const cost_json = {
   5: {
     'Company': "Pfc",
     'transit_speed': {
-      'value': 11.00,
+      'value': 10.00,
       'unit': 'km/hr'
     },
     'rates': {
@@ -107,7 +107,7 @@ const cost_json = {
   6: {
     'Company': "Victoria International",
     'transit_speed': {
-      'value': 6.00,
+      'value': 12.00,
       'unit': 'km/hr'
     },
     'rates': {
@@ -149,7 +149,7 @@ const cost_json = {
   8: {
     'Company': "Kishore",
     'transit_speed': {
-      'value': 12.00,
+      'value': 10.00,
       'unit': 'km/hr'
     },
     'rates': {
@@ -170,7 +170,7 @@ const cost_json = {
   9: {
     'Company': "Itsy Bitsy",
     'transit_speed': {
-      'value': 8.00,
+      'value': 20.00,
       'unit': 'km/hr'
     },
     'rates': {
@@ -191,7 +191,7 @@ const cost_json = {
   10: {
     'Company': "Eastman",
     'transit_speed': {
-      'value': 7.50,
+      'value': 10.50,
       'unit': 'km/hr'
     },
     'rates': {
@@ -75975,13 +75975,13 @@ const calculatebills = (startcode,endcode,weight) => {
     document.getElementById("weight_e").style.display="none";
     document.getElementById("container").style.color="white";
     document.getElementById("container_time").style.display="none";
-    document.getElementById("headfig").style.marginLeft="4%";
+    document.getElementById("headfig").style.marginLeft="9%";
     const myFunction = (x) => {
       if(x.matches) {
         document.getElementById("headfig").style.marginLeft="1rem";
       }
       else {
-        document.getElementById("headfig").style.marginLeft="4%";
+        document.getElementById("headfig").style.marginLeft="9%";
       }
     }
     return -1;
@@ -76054,6 +76054,7 @@ function bill_time(){
       labels: xValues,
       datasets: [{
         label:  'Time',
+        type: 'line',
         backgroundColor: y1barColor,
         borderColor: y1borderColor,
         borderWidth:1,

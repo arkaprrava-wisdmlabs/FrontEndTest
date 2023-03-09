@@ -93,7 +93,6 @@ header div {
 }
 header div h1 {
     font-size: 48px;
-    font-style: italic;
 }
 header div p {
     margin-top: 2%;
@@ -188,7 +187,6 @@ header figure {
 .about div h1 {
     height:fit-content;
     font-size: 48px;
-    font-style: italic;
 }
 .product {
     width:80%;
@@ -207,7 +205,6 @@ header figure {
     font-size: 48px;
     margin: 0px;
     padding:0px;
-    font-style: italic;
     text-align: center;
 }
 .product div p {
@@ -308,7 +305,6 @@ header figure {
     float: left;
     margin-top:2%;
     margin-left: 2%;
-    font-style: italic;
 }
 .card .signup button {
     float:right;
@@ -338,7 +334,6 @@ footer div {
     width:20%;
 }
 footer div h1 {
-    font-style: italic;
     font-size: 24px;
     text-align: center;
 }
